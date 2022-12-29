@@ -39,6 +39,7 @@ def verify():
 		result = hashlib.sha256(secret.encode())
 		hex = result.hexdigest()
 		
+		#Just dummy header
 		if hex != "147e3c03d32d8fd51d90860733df3b6d1ba692614de4d6478451900ac783bf21":
 			return 'your secret is invalid'
 
